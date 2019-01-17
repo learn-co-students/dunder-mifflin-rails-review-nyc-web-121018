@@ -1,0 +1,9 @@
+<h1>  All Employees </h1>
+
+
+<p><%= link_to "Create New Employee", new_employee_path %> </p>
+<p>
+<% @employees.each do | employee | %>
+<p><%= link_to "See Employee: #{employee.first_name} ", employee %> </p>
+<% end %>
+</p>
