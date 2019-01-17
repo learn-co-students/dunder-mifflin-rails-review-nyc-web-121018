@@ -1,0 +1,7 @@
+<h1>All the Dogs!</h1>
+<% @dog.all.each do |d| %>
+<li><%= d.name %></li>
+
+<%= link_to "Go See This dog", d %>
+
+ <% end %>

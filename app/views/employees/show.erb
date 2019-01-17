@@ -1,0 +1,8 @@
+<h1>This Employee</h1>
+<br>Name: <%= @employee.first_name + " " + @employee.last_name %></br>
+<br>Alias: <%= @employee.alias %></br>
+<br>Office: <%= @employee.office %></br>
+<br>Title: <%= @employee.title %></br>
+
+<% my_dog = @employee.dog_id %>
+My Dog's Name: <%= Dog.find(my_dog).name %>
