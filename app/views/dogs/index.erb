@@ -1,0 +1,7 @@
+<h1>Dunder Dogs</h1>
+
+<% @dogs.each do |dog| %>
+<%= link_to "#{dog.name} - #{dog.employees.count}", dog %><br>
+<% end %>
+
+<%= button_to "Sort Dogs by Employee Count", sorted_path, method: :get %>
