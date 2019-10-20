@@ -1,0 +1,5 @@
+<h1>Sorted Dunder Dogs</h1>
+
+<% @sorted.each do |dog| %>
+<%= link_to "#{dog.name} - #{dog.employees.count}", dog %><br>
+<% end %>

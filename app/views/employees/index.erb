@@ -1,0 +1,4 @@
+<h1><b>Employees</b></h1>
+  <% @employees.each do |e| %>
+  <p><%= link_to e.full_name, e %></p>
+  <% end %>
