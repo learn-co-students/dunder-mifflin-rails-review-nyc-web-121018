@@ -1,0 +1,11 @@
+<h1> All Dogs </h1>
+
+
+
+<p>
+<% @dogs.each do | dog | %>
+<p><%= link_to "See dog #{dog.name} ", dog %> </p>
+
+
+<% end %>
+</p>
